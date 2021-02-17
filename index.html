@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego casino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ctn-title-game">
+            <h1>CASINO</h1>
+        </div>
+        <div class="ctn-img-game">
+            <div class="img-item">
+                <img id="imagenUno" src="img/1.png" alt="">
+            </div>
+            <div class="img-item">
+                <img id="imagenDos" src="img/2.png"  alt="">
+            </div>
+            <div class="img-item">
+                <img id="imagenTres" src="img/3.png" alt="">
+            </div>
+        </div>
+        <div class="ctn-btn-start">
+            <a id="btnStart"  class="jugardenuevo" href="#">Juega de Nuevo</a>
+            <a id="jugarDeNuevo" class="btn-start" href="#">Reiniciar Juego</a>
+        </div>
+        <div class="ctn-score-game">
+            <div class="score">
+                <p>CREDITOS:<em id="score"></em></p>
+            </div>
+            <div class="ctn-win-lose" >
+                <p id="resultado"></p>
+            </div>
+            <p class="title-historial">Historial de rondas</p>
+            <div class="ctn-historial" id="historial">
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>

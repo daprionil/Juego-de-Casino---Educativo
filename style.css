@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'MontSerrat',sans-serif;
+}
+
+*::-moz-selection {
+  background: red;
+  color: white;
+}
+
+*::selection {
+  background: red;
+  color: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #d4d4d4;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.container .ctn-title-game {
+  text-align: center;
+  background: #0077ff;
+  font-size: 3rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+}
+
+.container .ctn-img-game {
+  background: rgba(255, 255, 255, 0.479);
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.411);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.411);
+  border-radius: 15px;
+  width: 50%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[3];
+      grid-template-columns: repeat(3, 200px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.container .ctn-img-game .img-item {
+  margin: 10px 0;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.container .ctn-img-game .img-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.container .ctn-btn-start {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+.container .ctn-btn-start .btn-start {
+  padding: 10px;
+  background: red;
+  border: 2px solid red;
+  border-radius: 15px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.container .ctn-btn-start .btn-start:hover {
+  background: rgba(255, 0, 0, 0.253);
+}
+
+.container .ctn-btn-start .jugardenuevo {
+  padding: 10px;
+  background: #0077ff;
+  border: 2px solid #0077ff;
+  border-radius: 15px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.container .ctn-btn-start .jugardenuevo:hover {
+  background: rgba(0, 119, 255, 0.342);
+}
+
+.container .ctn-score-game {
+  width: 30%;
+  margin: auto;
+}
+
+.container .ctn-score-game .score {
+  border-bottom: 2px solid white;
+  background: #ff7b00;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container .ctn-score-game .score p {
+  padding: 10px;
+}
+
+.container .ctn-score-game .score p em {
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.container .ctn-score-game .ctn-win-lose p {
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 10px;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container .ctn-score-game .ctn-win-lose p.ganada {
+  background: #3cff00;
+}
+
+.container .ctn-score-game .ctn-win-lose p.perdida {
+  background: red;
+}
+
+.container .ctn-score-game .ctn-win-lose p.no-creditos {
+  background: #0084ff;
+  text-decoration: underline;
+}
+
+.container .ctn-score-game .title-historial {
+  padding: 10px 0;
+}
+
+.container .ctn-score-game .ctn-historial .ctn-item-historial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: space-around;
+  background: #efefef;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.486);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.486);
+  margin: 5px 0;
+  -webkit-animation: fadeIn;
+          animation: fadeIn;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container .ctn-score-game .ctn-historial .ctn-item-historial p {
+  padding: 10px 5px;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@media (max-width: 1341px) {
+  .container .ctn-title-game {
+    font-size: 2rem;
+  }
+  .container .ctn-img-game {
+    width: 80%;
+  }
+  .container .ctn-btn-start {
+    width: 70%;
+  }
+  .container .ctn-score-game {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .ctn-title-game {
+    font-size: 1.5rem;
+  }
+  .container .ctn-img-game {
+    width: 100%;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .container .ctn-img-game .img-item img {
+    width: 90px;
+    height: 90px;
+  }
+  .container .ctn-btn-start {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .container .ctn-score-game {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

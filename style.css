@@ -20,6 +20,10 @@ body {
   width: 100vw;
   height: 100vh;
   background: #d4d4d4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffffd5), to(#ffffffd5)), url(./img/fondoBackground.jpg);
+  background: linear-gradient(#ffffffd5, #ffffffd5), url(./img/fondoBackground.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -32,14 +36,20 @@ body {
 
 .container .ctn-title-game {
   text-align: center;
-  background: #0077ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f2f2fdc), to(#464646e7)), url(/img/fondoBackgroundTitle.jpg);
+  background: linear-gradient(#2f2f2fdc, #464646e7), url(/img/fondoBackgroundTitle.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   font-size: 3rem;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+  color: #f0a500;
+  text-shadow: 0 0 4px #000000, 0 0 14px #f0a500;
 }
 
 .container .ctn-img-game {
-  background: rgba(255, 255, 255, 0.479);
+  background: white;
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.411);
           box-shadow: 0 0 14px rgba(0, 0, 0, 0.411);
   border-radius: 15px;

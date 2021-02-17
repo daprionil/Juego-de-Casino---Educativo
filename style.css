@@ -36,8 +36,8 @@ body {
 
 .container .ctn-title-game {
   text-align: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f2f2fdc), to(#464646e7)), url(/img/fondoBackgroundTitle.jpg);
-  background: linear-gradient(#2f2f2fdc, #464646e7), url(/img/fondoBackgroundTitle.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2f2f2fdc), to(#464646e7)), url(./img/fondoBackgroundTitle.jpg);
+  background: linear-gradient(#2f2f2fdc, #464646e7), url(./img/fondoBackgroundTitle.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
